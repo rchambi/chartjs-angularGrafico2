@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <div style="display: block">
+      <canvas #myChart baseChart
+        [data]="doughnutChartData"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"
+        [options]="doughnutOptions"
+        [colors]="donutGradient">
+      </canvas>
+    </div>
+  </div>
+</div>
+<div style="display:flex; flex-direction:row">
+  <p style="margin-left:20px;" *ngFor="let data of doughnutChartData">{{data}}</p>
+<button style="align-self:Center;" class="btn" (click)="otherValues()">Test Other Values</button>
+</div>

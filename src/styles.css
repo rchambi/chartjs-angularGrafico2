@@ -1,0 +1,48 @@
+/* Add application styles & imports to this file! */
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+.btn{
+    font-family: inherit;
+    font-size: 14px;
+    background: #2ecc71;
+    cursor: pointer;
+    padding: 10px 10px;
+    display: inline-block;
+    margin: 15px 30px;
+  border-radius: 10px;
+    border: 3px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/*angular gauge */
+mwl-gauge {
+  width: 400px;
+  height: 400px;
+  display: block;
+  padding: 10px;
+}
+mwl-gauge > .gauge > .dial {
+  stroke: #eee;
+  stroke-width: 2;
+  fill: rgba(0,0,0,0);
+}
+mwl-gauge > .gauge > .value {
+  stroke: rgb(47, 227, 255);
+  stroke-width: 2;
+  fill: rgba(0,0,0,0);
+}
+mwl-gauge > .gauge > .value-text {
+  fill: rgb(47, 227, 255);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}

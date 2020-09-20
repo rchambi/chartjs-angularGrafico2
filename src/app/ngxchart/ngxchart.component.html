@@ -1,0 +1,25 @@
+
+ <div style="width:100%; display:flex; flex-direction:column">
+  <ngx-charts-gauge 
+        #myGauge
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="data"
+        [min]="0"
+        [max]="100"
+        [angleSpan]="180"
+        [startAngle]="-90"
+        [units]="'%'"
+        [bigSegments]="10"
+        [smallSegments]="5"
+        (select)="onSelect($event)">
+        
+    </ngx-charts-gauge>
+    
+<div style="align-self:center;">
+  <p style="margin-left:20px;" *ngFor="let data of doughnutChartData">{{data}}</p>
+<button style="margin-left:auto;" class="btn" (click)="otherValues()">Test Other Values</button>
+</div>
+
+<div>
+
